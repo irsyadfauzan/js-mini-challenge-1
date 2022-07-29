@@ -1,6 +1,15 @@
 function isAnagram(word1, word2) {
-  // Tulis kodingan dibawah ini
-  const result = true;
+  const words1 = word1.replaceAll(' ', '');
+  const words2 = word2.replaceAll(' ', '');
+  const word11 = words1.toLowerCase();
+  const word22 = words2.toLowerCase();
+  const word111 = word11.split("");
+  const word222 = word22.split("");
+  const words111 = word111.sort();
+  const words222 = word222.sort();
+  const wordx1 = words111.join();
+  const wordx2 = words222.join();
+  const result = wordx1.includes(wordx2);
   return result;
 }
 
