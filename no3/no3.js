@@ -1,7 +1,7 @@
 function isAnagram(word1, word2) {
   const words1 = word1.replaceAll(' ', '').toLowerCase().split("").sort().join();
   const words2 = word2.replaceAll(' ', '').toLowerCase().split("").sort().join();
-  result = words1.includes(words2);
+  result = words1===words2;
   return result;
 }
 
